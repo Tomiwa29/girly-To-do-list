@@ -34,3 +34,15 @@ function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
 showTask();
+
+// Get reference to the color theme select dropdown
+const colorThemeSelect = document.getElementById('color-theme');
+
+// Listen for changes to the color theme
+colorThemeSelect.addEventListener('change', function() {
+  // Remove any existing theme classes from the body
+  document.body.classList.remove('pastel', 'vibrant', 'retro', 'minimalist');
+  
+  // Add the selected theme class to the body
+  document.body.classList.add(colorThemeSelect.value);
+});
