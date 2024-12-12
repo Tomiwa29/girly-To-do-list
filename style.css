@@ -98,3 +98,133 @@ ul li span:hover{
    background: #f6b4c9;
     
 }
+
+#settings {
+    position: absolute; /* Position it relative to the nearest positioned ancestor */
+    bottom: 1px; /* Place it near the bottom */
+    left: 1px; /* Place it near the left edge */
+    padding: 1px;
+    border-radius: 2px;
+    background:transparent;
+    box-shadow: transparent;
+    width: auto; /* Let the width adjust automatically */
+}
+
+#settings label {
+    font-size: 7px;
+    margin-right: 3px;
+    color: #333;
+}
+
+#settings select {
+    background-color: #f9adcd;
+    font-size: 7px;
+    padding: 1px;
+    border: 1px ;
+    border-radius: 3px;
+    width: 17px;
+}
+
+/* Ensure the parent container has relative positioning */
+.todo-app {
+    position: relative;
+}
+
+/* Color Themes */
+
+
+body.pastel .container{
+    background: linear-gradient(135deg, #fae7eb,#d8bbd3);}
+
+
+body.pastel .row {
+    background: #fae7eb;
+}
+body.pastel .todo-app {
+    background: #d8bbd3;
+}
+
+body.pastel h2 {
+    color: #fae7eb;  /* Purple text */
+}
+
+body.pastel button {
+    background:#bc9ac2 ;  /* Pastel pink button */
+    color:#d1edea;
+}
+
+body.pastel #list-container li {
+    color: #ecf8f7;
+}
+
+body.vibrant .container{
+    background: linear-gradient(135deg, #ffeada,#ffb5a4);}
+
+
+body.vibrant .row {
+    background: #ffeada;
+}
+
+body.vibrant .todo-app {
+    background: #ffb5a4;#f4cbba #fdeac3
+}
+
+body.vibrant h2 {
+    color: #fdeac3;
+}
+
+body.vibrant button {
+    background: #fbc5ae;  /* Bright pink button */
+    color: #f69883;
+}
+
+body.vibrant #list-container li {
+    color: #fdeac3;
+}
+body.retro .container{
+    background: linear-gradient(135deg, #daf2d7, #90cfbe);
+}
+
+body.retro .row {
+    background: #daf2d7;
+}
+
+body.retro .todo-app {
+    background:#8ed5ad ;
+}
+
+body.retro h2 {
+    color: #c6edc3;  /* Deep red text */
+}
+
+body.retro button {
+    background: #3fb48d;  /* Retro teal button */
+    color: #c6edc3;
+}
+
+body.retro #list-container li {
+    color: #cbedcb;
+}
+
+body.minimalist {
+    background: linear-gradient(135deg, #fafafa, #e0e0e0);
+}
+
+body.minimalist .todo-app {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+body.minimalist h2 {
+    color: #333;
+}
+
+body.minimalist button {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+body.minimalist #list-container li {
+    color: #333;
+}
